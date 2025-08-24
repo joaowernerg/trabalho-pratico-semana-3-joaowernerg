@@ -3,93 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biblioteca Online</title>
+  <title>📚 Biblioteca Online</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>📚 Biblioteca Online</h1>
-    <p>Escolha um livro por categoria</p>
-  </header>
 
-  <main class="categorias">
-    <section class="categoria">
-      <h2>Terro</h2>
-      <a href="itacoisa.html" class="livro">
-        <img src="http://4.bp.blogspot.com/-bU1xyG2Id6M/VjevuQnMdII/AAAAAAAAFlA/JCuLfhzVNj8/s1600/91NoOx8XnvL.jpg"
-         alt="it a coisa">
-        <p>it a coisa Parte 1 </p>
-      </a>
-    </section>
+  <!-- TELA DE BOAS-VINDAS -->
+  <div id="welcome-screen">
+    <h1>📚 Bem-vindo à Biblioteca Online!</h1>
+    <p>Escolha seu livro e embarque nessa leitura!</p>
+  </div>
 
-    <section class="categoria">
-      <h2>Terro</h2>
-      <a href="oiluminado.html" class="livro">
-        <img src="https://escolaeducacao.com.br/wp-content/uploads/2020/06/melhores-livros-de-terror-o-iluminado.jpg" 
-        alt="o-iluminado">
-        <p>o iluminado</p>
-      </a>
-    </section>
+  <!-- CONTEÚDO PRINCIPAL -->
+  <div id="main-content" style="display:none;">
+    <header>
+      <h1>📚 Biblioteca Online</h1>
+      <p>Escolha um livro por categoria</p>
+    </header>
 
-    <section class="categoria">
-      <h2>Terro</h2>
-      <a href="AeradosMortosParte1.html" class="livro">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/71r9oTQ1mNL.jpg" 
-        alt="A era dos Mortos Parte 1">
-        <p>A era dos Mortos Parte 1</p>
-      </a>
-    </section>
-    
-    <section class="categoria">
-        <h2>Terro</h2>
-        <a href="DançadaEscuridão.html" class="livro">
-            <img src="https://1.bp.blogspot.com/-3X3qm6ynNas/XDNilmtp4BI/AAAAAAAAN9o/L9PLG6ebtpcohgAx6GtUdRGzBxUJwrqowCK4BGAYYCw/s1600/71wf8NJySpL.jpg" 
-            alt="Dança da Escuridão">
-            <p>Dança da Escuridão</p>
+    <nav class="nav-categorias">
+      <a href="#terror">🎃 Terror</a>
+      <a href="#infantil">🧒 Infantil</a>
+      <a href="#manga">📖 Mangá</a>
+      <a href="#romance">💖 Romance</a>
+      <a href="#culinaria">🍳 Culinária</a>
+    </nav>
 
-        </a>
-    </section>
+    <main>
+      <!-- TERROR -->
+      <section class="secao" id="terror">
+        <h2>🎃 Terror</h2>
+        <div class="grid-livros">
+          <div class="livro"><a href="itacoisa.html"><img src="http://4.bp.blogspot.com/-bU1xyG2Id6M/VjevuQnMdII/AAAAAAAAFlA/JCuLfhzVNj8/s1600/91NoOx8XnvL.jpg" alt="It: A Coisa"><p>It: A Coisa</p></a></div>
+          <div class="livro"><a href="oiluminado.html"><img src="https://escolaeducacao.com.br/wp-content/uploads/2020/06/melhores-livros-de-terror-o-iluminado.jpg" alt="O Iluminado"><p>O Iluminado</p></a></div>
+          <div class="livro"><a href="AeradosMortosParte1.html"><img src="https://images-na.ssl-images-amazon.com/images/I/71r9oTQ1mNL.jpg" alt="A Era dos Mortos Parte 1"><p>A Era dos Mortos - Parte 1</p></a></div>
+          <div class="livro"><a href="DançadaEscuridão.html"><img src="https://1.bp.blogspot.com/-3X3qm6ynNas/XDNilmtp4BI/AAAAAAAAN9o/L9PLG6ebtpcohgAx6GtUdRGzBxUJwrqowCK4BGAYYCw/s1600/71wf8NJySpL.jpg" alt="Dança da Escuridão"><p>Dança da Escuridão</p></a></div>
+          <div class="livro"><a href="OExorcista.html"><img src="http://4.bp.blogspot.com/_fJHJ1uFN_-s/TOAPoqoWPnI/AAAAAAAACOA/7pqAz7b9Ztg/s1600/O%2BExorcista.jpg" alt="O Exorcista"><p>O Exorcista</p></a></div>
+          <div class="livro"><a href="Acolônia.html"><img src="https://images-submarino.b2w.io/produtos/128508452/imagens/livro-a-colonia/128508452_1_xlarge.jpg" alt="A Colônia"><p>A Colônia</p></a></div>
+        </div>
+      </section>
 
-     <section class="categoria">
-        <h2>Terro</h2>
-        <a href="OExorcista.html" class="livro">
-            <img src="http://4.bp.blogspot.com/_fJHJ1uFN_-s/TOAPoqoWPnI/AAAAAAAACOA/7pqAz7b9Ztg/s1600/O%2BExorcista.jpg" 
-            alt="O Exorcista">
-            <p>O Exorcista</p>
-        </a>
-    </section>
+      <!-- INFANTIL -->
+      <section class="secao" id="infantil">
+        <h2>🧒 Infantil</h2>
+        <div class="grid-livros">
+          <div class="livro"><a href="Quemsoltouopum.html"><img src="https://promocaodelivro.com/wp-content/uploads/2022/12/quem-soltou-o-pum-2408x2415-1-1021x1024.jpg" alt="Quem Soltou o Pum?"><p>Quem Soltou o Pum?</p></a></div>
+          <div class="livro"><a href="omeninomaluquinho.html"><img src="https://www.zinecultural.com/Repositorio/Upload/Imagens/2022/agosto/09/911o1h5gIzL.jpg" alt="O Menino Maluquinho"><p>O Menino Maluquinho</p></a></div>
+        </div>
+      </section>
 
-    <section class="categoria">
-        <h2>Terro</h2>
-        <a href="Acolônia.html" class="livro">
-            <img src="https://images-submarino.b2w.io/produtos/128508452/imagens/livro-a-colonia/128508452_1_xlarge.jpg" 
-            alt="O Exorcista">
-            <p>A colônia</p>
-        </a>
-    </section>
+      <!-- MANGÁ -->
+      <section class="secao" id="manga">
+        <h2>📖 Mangá</h2>
+        <div class="grid-livros">
+          <div class="livro"><a href="NarutoVolume1.html"><img src="https://cdn.kobo.com/book-images/e354f3eb-d7f8-4339-9c95-f6b1885bad7d/1200/1200/False/naruto-vol-1.jpg" alt="Naruto Vol. 1"><p>Naruto Vol. 1</p></a></div>
+          <div class="livro"><a href="NarutoVolume2.html"><img src="https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781591161783_9781591161783_hr.jpg" alt="Naruto Vol. 2"><p>Naruto Vol. 2</p></a></div>
+          <div class="livro"><a href="NarutoVolume3.html"><img src="https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781591161875_9781591161875_hr.jpg" alt="Naruto Vol. 3"><p>Naruto Vol. 3</p></a></div>
+          <div class="livro"><a href="NarutoVolume4.html"><img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781591163589/naruto-vol-4-9781591163589_hr.jpg" alt="Naruto Vol. 4"><p>Naruto Vol. 4</p></a></div>
+          <div class="livro"><a href="bleachVolume1.html"><img src="https://cdn.kobo.com/book-images/20ce5810-226e-419c-b0e2-686045d1e397/1200/1200/False/bleach-vol-1.jpg" alt="Bleach Vol. 1"><p>Bleach Vol. 1</p></a></div>
+          <div class="livro"><a href="bleachVolume2.html"><img src="https://images.saymedia-content.com/.image/t_share/MTkzMzQyNjI4OTc1MTU5MjAz/manga-review-bleach-volume-2-by-tite-kubo.jpg" alt="Bleach Vol. 2"><p>Bleach Vol. 2</p></a></div>
+          <div class="livro"><a href="bleachVolume3.html"><img src="https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781591164432_9781591164432_hr.jpg" alt="Bleach Vol. 3"><p>Bleach Vol. 3</p></a></div>
+          <div class="livro"><a href="bleachVolume4.html"><img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781591164449/bleach-vol-4-9781591164449_hr.jpg" alt="Bleach Vol. 4"><p>Bleach Vol. 4</p></a></div>
+        </div>
+      </section>
 
-    <section class="categoria">
-        <h2>infantil</h2>
-        <a href="Quemsoltouopum.html" class="livro">
-            <img src="https://promocaodelivro.com/wp-content/uploads/2022/12/quem-soltou-o-pum-2408x2415-1-1021x1024.jpg" 
-            alt="Quem soltou o pum ">
-            <p>Quem soltou o pum</p>
-        </a>
-    </section>
+      <!-- ROMANCE -->
+      <section class="secao" id="romance">
+        <h2>💖 Romance</h2>
+        <div class="grid-livros">
+          <div class="livro"><a href="RomeueJulieta.html"><img src="https://www.themoviedb.org/t/p/original/8vEve8D0hJN6IzbiRMOUtnJokfO.jpg" alt="Romeu e Julieta"><p>Romeu e Julieta</p></a></div>
+          <div class="livro"><a href="ACulpaédasEstrelas.html"><img src=http://1.bp.blogspot.com/-SdWEuFL9RFk/UKoWBDS7neI/AAAAAAAAC2o/bfPG49qd7FI/s1600/a_culpa_e_das_estrelas.jpg" alt="A Culpa é das Estrelas"><p>A Culpa é das Estrelas</p></a></div>
+          <div class="livro"><a href="ComoEuEraAntesdeVoce.html"><img src="https://1.bp.blogspot.com/-PbvlTcMyC0Q/VzPGB0VRUFI/AAAAAAAAgZE/9anFBy2a5mYHI231pIeLvlIJTeakpUIUgCLcB/s1600/como%2Beu%2Bera%2Bantes%2Bde%2Bvoce%2B-%2Bcapa%2Bfilme.jpg" alt="Como Eu Era Antes de Você"><p>Como Eu Era Antes de Você</p></a></div>
+        </div>
+      </section>
 
-    <section class="categoria">
-        <h2>infantil</h2>
-        <a href="omeninomaluquinho.html" class="livro">
-            <img src="https://www.zinecultural.com/Repositorio/Upload/Imagens/2022/agosto/09/911o1h5gIzL.jpg" 
-            alt="o menino maluquinho">
-            <p>o menino maluquinho</p>
-        </a>
-    </section>
+      <!-- CULINÁRIA -->
+      <section class="secao" id="culinaria">
+        <h2>🍳 Culinária</h2>
+        <div class="grid-livros">
+          <div class="livro"><a href="TecnicasCulinarias.html"><img src="http://3.bp.blogspot.com/_4RuwxI7U9_8/S_bwPHQOw4I/AAAAAAAABIY/GhOnanZtPzQ/s400/livro+culinaria.jpg" alt="Técnicas Culinárias"><p>Técnicas Culinárias</p></a></div>
+          <div class="livro"><a href="103ReceitasCaseiras.html"><img src="https://marketplace.canva.com/EADzX8xDcYU/1/0/501w/canva-azul-marinho-foto-quadrada-livro-de-receitas-capa-de-livro-aB7sUy4w024.jpg" alt="103 Receitas Caseiras"><p>103 Receitas Caseiras</p></a></div>
+        </div>
+      </section>
+    </main>
+  </div>
 
+  <script>
+    // Tela de boas-vindas
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('welcome-screen').style.opacity = '0';
+        setTimeout(() => {
+          document.getElementById('welcome-screen').style.display = 'none';
+          document.getElementById('main-content').style.display = 'block';
+        }, 500);
+      }, 2500);
+    });
 
-    
+    // Efeito de scroll fade nos livros
+    const livros = document.querySelectorAll('.livro');
+    const mostrarLivro = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      livros.forEach(livro => {
+        const livroTop = livro.getBoundingClientRect().top;
+        if (livroTop < triggerBottom) livro.classList.add('show');
+      });
+    };
+    window.addEventListener('scroll', mostrarLivro);
+    window.addEventListener('load', mostrarLivro);
+  </script>
 
-     
-  </main>
 </body>
 </html>
