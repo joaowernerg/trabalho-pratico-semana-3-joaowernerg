@@ -1,34 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>It: A Coisa | Biblioteca Online</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>It: A Coisa | Biblioteca Online</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>📚 Biblioteca Online</h1>
-</header>
-
-<main class="pagina-livro">
-  <div class="livro-detalhe">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/91NoOx8XnvL.jpg" alt="It: A Coisa">
-    <div class="detalhes">
-      <h2>It: A Coisa</h2>
-      <p><strong>Autor:</strong> Stephen King</p>
-      <p><strong>Ano:</strong> 1986</p>
-      <p><strong>Gênero:</strong> Terror / Ficção</p>
-      <p><strong>Páginas:</strong> 1.138</p>
-      <h3>Sinopse:</h3>
-      <p>Um grupo de crianças enfrenta uma entidade maligna que se alimenta do medo, reaparecendo a cada 27 anos na cidade de Derry.</p>
-      <a href="index.html" class="btn-voltar">← Voltar para a Biblioteca</a>
+  <!-- ====== HEADER ====== -->
+  <header class="site-header">
+    <div class="container">
+      <h1>📚 Biblioteca Online</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#">Categorias</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</main>
+  </header>
 
-<footer>
-  <p>© 2025 Biblioteca Online. Todos os direitos reservados.</p>
-</footer>
+  <!-- ====== DETALHES DO LIVRO ====== -->
+  <main class="pagina-livro container">
+    <article class="livro-detalhe">
+      <figure>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/91NoOx8XnvL.jpg" 
+             alt="Capa do livro It: A Coisa de Stephen King">
+        <figcaption>Capa de "It: A Coisa"</figcaption>
+      </figure>
+
+      <section class="detalhes">
+        <h2>It: A Coisa</h2>
+
+        <ul class="info-livro">
+          <li><strong>Autor:</strong> Stephen King</li>
+          <li><strong>Ano:</strong> 1986</li>
+          <li><strong>Gênero:</strong> Terror / Ficção</li>
+          <li><strong>Páginas:</strong> 1.138</li>
+          <li><strong>Editora:</strong> Viking Press</li>
+          <li><strong>Adaptação:</strong> Minissérie de 1990 e filmes de 2017/2019</li>
+        </ul>
+
+        <h3>📖 Sinopse</h3>
+        <p>
+          Um grupo de crianças enfrenta uma entidade maligna conhecida como Pennywise, que se alimenta do medo. A cada 27 anos, a criatura reaparece na cidade de Derry, colocando todos em perigo.
+        </p>
+
+        <h3>✨ Personagens Principais</h3>
+        <ul>
+          <li>Bill Denbrough – líder do grupo, determinado e corajoso.</li>
+          <li>Beverly Marsh – a única garota do grupo, enfrenta medos pessoais e externos.</li>
+          <li>Richie Tozier – cômico e leal, conhecido por suas piadas.</li>
+          <li>Pennywise – o antagonista, forma de palhaço aterrorizante.</li>
+          <li>Os demais membros do Clube dos Perdedores – cada um com suas características únicas.</li>
+        </ul>
+
+        <h3>📌 Curiosidades</h3>
+        <ul>
+          <li>Stephen King se inspirou em sua cidade natal de Portland para criar Derry.</li>
+          <li>A minissérie de 1990 tornou o palhaço Pennywise um ícone do terror.</li>
+          <li>O livro explora temas de amizade, medo, infância e trauma psicológico.</li>
+        </ul>
+
+        <a href="index.html" class="btn-voltar">← Voltar para a Biblioteca</a>
+      </section>
+    </article>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <p>© 2025 Biblioteca Online. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>

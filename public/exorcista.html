@@ -1,34 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>O Exorcista | Biblioteca Online</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📖 O Exorcista | Biblioteca Online</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>📚 Biblioteca Online</h1>
-</header>
-
-<main class="pagina-livro">
-  <div class="livro-detalhe">
-    <img src="http://4.bp.blogspot.com/_fJHJ1uFN_-s/TOAPoqoWPnI/AAAAAAAACOA/7pqAz7b9Ztg/s1600/O%2BExorcista.jpg" alt="O Exorcista">
-    <div class="detalhes">
-      <h2>O Exorcista</h2>
-      <p><strong>Autor:</strong> William Peter Blatty</p>
-      <p><strong>Ano:</strong> 1971</p>
-      <p><strong>Gênero:</strong> Terror / Sobrenatural</p>
-      <p><strong>Páginas:</strong> 336</p>
-      <h3>Sinopse:</h3>
-      <p>Uma jovem garota é possuída por uma força demoníaca, e dois padres tentam libertá-la através de um exorcismo aterrorizante.</p>
-      <a href="index.html" class="btn-voltar">← Voltar para a Biblioteca</a>
+  <!-- ====== HEADER ====== -->
+  <header class="site-header">
+    <div class="container">
+      <h1>📚 Biblioteca Online</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#">Categorias</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</main>
+  </header>
 
-<footer>
-  <p>© 2025 Biblioteca Online. Todos os direitos reservados.</p>
-</footer>
+  <!-- ====== DETALHES DO LIVRO ====== -->
+  <main class="pagina-livro container">
+    <article class="livro-detalhe">
+      <figure>
+        <img src="http://4.bp.blogspot.com/_fJHJ1uFN_-s/TOAPoqoWPnI/AAAAAAAACOA/7pqAz7b9Ztg/s1600/O%2BExorcista.jpg" 
+             alt="Capa do livro O Exorcista de William Peter Blatty">
+        <figcaption>Capa de "O Exorcista"</figcaption>
+      </figure>
+
+      <section class="detalhes">
+        <h2>O Exorcista</h2>
+
+        <ul class="info-livro">
+          <li><strong>Autor:</strong> William Peter Blatty</li>
+          <li><strong>Ano:</strong> 1971</li>
+          <li><strong>Gênero:</strong> Terror / Sobrenatural</li>
+          <li><strong>Páginas:</strong> 336</li>
+          <li><strong>Editora:</strong> Harper & Row</li>
+          <li><strong>Adaptação:</strong> Filme de 1973 dirigido por William Friedkin</li>
+        </ul>
+
+        <h3>📖 Sinopse</h3>
+        <p>
+          Uma jovem garota é possuída por uma força demoníaca, e dois padres tentam libertá-la através de um exorcismo aterrorizante.
+        </p>
+
+        <h3>✨ Personagens Principais</h3>
+        <ul>
+          <li>Regan MacNeil – a jovem possuída.</li>
+          <li>Padre Damien Karras – psicólogo e sacerdote que realiza o exorcismo.</li>
+          <li>Padre Lankester Merrin – experiente exorcista que ajuda no ritual.</li>
+          <li>Chris MacNeil – mãe de Regan, que busca desesperadamente ajuda.</li>
+        </ul>
+
+        <h3>📌 Curiosidades</h3>
+        <ul>
+          <li>O livro inspirou o clássico filme de terror de 1973.</li>
+          <li>William Peter Blatty baseou a história em um caso real de exorcismo ocorrido nos anos 1940.</li>
+          <li>O filme recebeu 10 indicações ao Oscar, incluindo Melhor Filme.</li>
+        </ul>
+
+        <a href="index.html" class="btn-voltar">← Voltar para a Biblioteca</a>
+      </section>
+    </article>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <p>© 2025 Biblioteca Online. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>

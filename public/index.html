@@ -8,14 +8,16 @@
 </head>
 <body>
 
-<header>
-  <h1>📚 Biblioteca Online</h1>
-  <p>Explore as categorias e descubra seus livros favoritos</p>
+<header class="header">
+  <div class="container">
+    <h1>📚 Biblioteca Online</h1>
+    <p>Explore as categorias e descubra seus livros favoritos</p>
+  </div>
 </header>
 
-<div class="capa-destaque">
+<section class="capa-destaque">
   <img id="capa-principal" src="https://images-na.ssl-images-amazon.com/images/I/91NoOx8XnvL.jpg" alt="Capa Destaque">
-</div>
+</section>
 
 <nav class="nav-categorias">
   <a href="#terror" data-capa="https://images-na.ssl-images-amazon.com/images/I/91NoOx8XnvL.jpg">🎃 Terror</a>
@@ -23,7 +25,8 @@
   <a href="#manga" data-capa="https://cdn.kobo.com/book-images/e354f3eb-d7f8-4339-9c95-f6b1885bad7d/1200/1200/False/naruto-vol-1.jpg">📖 Mangá</a>
 </nav>
 
-<main>
+<main class="container">
+
   <!-- TERROR -->
   <section class="secao" id="terror">
     <h2>🎃 Terror</h2>
@@ -56,43 +59,23 @@
     </div>
   </section>
 
-
 </main>
 
-<!-- RODAPÉ -->
+<!-- CARTÃO DESENVOLVEDOR -->
+<div class="dev-info">
+  <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-icon">
+  <div class="dev-card">
+    <h3>João de Cristo Werner Gonçalves Moreira</h3>
+    <p>Desenvolvedor Front-End</p>
+    <a href="https://www.linkedin.com/in/joao-de-cristo-werner-goncalves-moreira/" target="_blank">LinkedIn</a>
+  </div>
+</div>
+
 <footer>
   <p>© 2025 Biblioteca Online. Todos os direitos reservados.</p>
 </footer>
 
-<script>
-  const links = document.querySelectorAll('.nav-categorias a');
-  const capa = document.getElementById('capa-principal');
-
-  links.forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const url = link.dataset.capa;
-      capa.style.opacity = 0;
-      setTimeout(() => {
-        capa.src = url;
-        capa.style.opacity = 1;
-      }, 300);
-      document.querySelector(link.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-    });
-  });
-
-  const secoes = document.querySelectorAll('.secao');
-  window.addEventListener('scroll', () => {
-    let scrollPos = window.scrollY + window.innerHeight / 3;
-    secoes.forEach(secao => {
-      if(scrollPos >= secao.offsetTop) {
-        const link = document.querySelector(`.nav-categorias a[href="#${secao.id}"]`);
-        const url = link.dataset.capa;
-        if(capa.src !== url) capa.src = url;
-      }
-    });
-  });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
+
