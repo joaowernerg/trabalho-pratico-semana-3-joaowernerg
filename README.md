@@ -10,10 +10,13 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
+- Nome:Joao de cristo werner Goncanves Moreira
+- Matricula:00892941
 - Proposta de projeto escolhida:
+projeto tem como objetivo desenvolver uma plataforma digital simples e intuitiva para consulta de livros. A ideia é criar um site acessível onde os usuários possam visualizar títulos, capas, categorias e descrições de obras literárias, permitindo explorar diferentes gêneros de forma organizada.
+
 - Breve descrição sobre seu projeto:
+Um site responsivo que organiza livros por categorias, com capas, descrições e barra de pesquisa para facilitar a navegação.
 
 
 ## Print do(s) wireframe(s) criado
@@ -22,5 +25,6 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 
 ## Print da home-page criada
-
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](<Captura de tela 2025-08-30 204711.png>)
+![alt text](image.png)
+![alt text](image-1.png)
